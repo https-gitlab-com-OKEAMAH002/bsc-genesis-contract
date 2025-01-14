@@ -19,3 +19,40 @@ IMPROVEMENTS
 * [\#19](https://github.com/bnb-chain/bsc-genesis-contract/pull/19) Optimize rlp decoding and encoding library to save gas
 * [\#22](https://github.com/bnb-chain/bsc-genesis-contract/pull/22) Add fail ack handler for transferOut
 * [\#24](https://github.com/bnb-chain/bsc-genesis-contract/pull/24) Split tokenhub contract into tokenhub(for cross chain transfer) and tokenManager(for token bind and unbind)
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+- Placeholder for any new changes or features before the next release.
+
+---
+
+## [1.0.0] - 2025-01-14
+
+### Added
+- **Token Contract**: BOOM ($BM) with 18 decimals.
+- **Ownership Control**: The deployer address is set as the initial owner.
+- **Deposit/Withdraw Functions**: Allow users to deposit and withdraw BNB with event logging.
+- **Emergency Withdraw**: The owner can withdraw all funds in case of emergency.
+- **Transfer Functions**: Allow users to transfer tokens and approve transfers.
+- **Fallback Function**: Support for direct BNB deposits.
+- **Ownership Transfer**: Admin functionality to transfer ownership to a new address.
+
+### Fixed
+- **Reentrancy Protection**: Ensured safer withdrawals using `call{value:}` to mitigate reentrancy attacks.
+- **Allowance System**: Approve and transferFrom functions ensure correct allowance checks.
+
+---
+
+## [0.9.0] - 2025-01-10
+
+- **WBNB Contract**: Initial version based on Wrapped BNB (WBNB) contract structure.
+- **Owner-Specific Access**: Deployer is set as the owner by default.
+
+---
+
+### Notes:
+- The `Unreleased` section is for future changes. Update this section when new changes are made before a release.
+- Be sure to update each section with the proper date and changes for future versions.
