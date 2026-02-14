@@ -16,7 +16,7 @@
     "@openzeppelin/contracts-upgradeable": "^5.0.2",
     "commander": "^3.0.1",
     "nunjucks": "^3.2.4",
-    "rlp": "^2.2.7",
+    "rlp": "^3.0.0",
     "web3": "^4.8.0"
   },
   "devDependencies": {
